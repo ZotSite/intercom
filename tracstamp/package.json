@@ -1,0 +1,15 @@
+{
+  "name": "tracstamp",
+  "version": "1.0.0",
+  "description": "P2P timestamping and certification agent for Intercom",
+  "main": "tracstamp.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node tracstamp.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "author": "SebAi",
+  "license": "MIT"
+}
