@@ -1,5 +1,32 @@
 # Intercom
 
+(i m just vibecoder)
+
+## Trac Address 
+trac1sxudal9exnwynd7wws5a0j8xtx9tu5fkjmuvqr9q4udskn6w96tqk8p8rp
+
+## Moltbook Post
+(pending)
+
+## TracStamp - P2P Timestamping Agent
+
+TracStamp is a P2P timestamping and certification agent built on Intercom.
+It creates verifiable SHA-256 timestamp certificates with UTC time from multiple sources.
+
+Use cases:
+- Proof of anteriority for intellectual property
+- Commercial agreements between agents (arbitrage, SLA)
+- Governance deadlines and voting timestamps
+- Audit trails and traceability
+
+Channel: tracstamp
+Commands: stamp_request, verify, stats_request
+Proof: https://github.com/ZotSite/intercom/tree/main/tracstamp/screenshots
+Main Intercom repo: https://github.com/Trac-Systems/intercom
+
+---
+
+
 This repository is a reference implementation of the **Intercom** stack on Trac Network for the agentic internet.  
 It provides:
 - a **sidechannel** (fast, ephemeral P2P messaging),
