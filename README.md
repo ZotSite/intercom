@@ -24,6 +24,21 @@ Commands: stamp_request, verify, stats_request
 Proof: https://github.com/ZotSite/intercom/tree/main/tracstamp/screenshots
 Main Intercom repo: https://github.com/Trac-Systems/intercom
 
+
+## Roadmap
+
+Current status: Demo version (free)
+This is a proof-of-concept running on sidechannels only. Certificates are stored locally by the stamping node.
+
+Coming next: Certified version (paid in TNK)
+- Certificates registered on-chain via Intercom contracts — immutable and publicly verifiable
+- Each stamp recorded in the Trac Network settlement layer — legally opposable
+- Timestamping fee paid in TNK per certificate
+- Permanent proof that no one can alter or delete — not even the stamping node
+
+From a simple notary to a decentralized proof authority on Trac Network.
+
+
 ---
 
 
