@@ -25,6 +25,20 @@ Proof: https://github.com/ZotSite/intercom/tree/main/tracstamp/screenshots
 Main Intercom repo: https://github.com/Trac-Systems/intercom
 
 
+The certificate includes:
+- stamp_id: Unique identifier (TS-00001, TS-00002...)
+- hash: SHA-256 of the content
+- utc_time: Verified UTC timestamp from multiple sources
+- requested_by: Public key of the requester (verified by the network)
+- stamped_by: Trac address of TracStamp
+
+
+
+
+
+
+
+
 ## Roadmap
 
 Current status: Demo version (free)
