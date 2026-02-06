@@ -139,7 +139,7 @@ async function fetchUtcTime() {
 }
 
 // Create a timestamp certificate
-async function createCertificate(content) {
+async function createCertificate(content, requestedBy) {
   const stampId = getNextStampId();
   const hash = hashContent(content);
   const timeData = await fetchUtcTime();
@@ -157,6 +157,7 @@ async function createCertificate(content) {
     utc_time: timeData.utc_time,
     unix_ts: timeData.unix_ts,
     time_sources: timeData.time_sources,
+    requested_by: requestedBy || null,
     stamped_by: CONFIG.tracAddress
   };
 
@@ -245,7 +246,7 @@ async function handleSidechannelMessage(msg) {
         });
         return;
       }
-      const certificate = await createCertificate(payload.content);
+      const certificate = await createCertificate(payload.content, from);
       sendToChannel(CONFIG.mainChannel, certificate);
       break;
     }
